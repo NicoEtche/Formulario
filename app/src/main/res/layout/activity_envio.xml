@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="10dp"
+    tools:context=".EnvioActivity">
+
+    <TextView
+        android:id="@+id/text_view_envioRealizado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="¡Envio realizado correctamente!"
+        android:textColor="#000000"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/text_view_infoEnviada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_envioRealizado"
+        android:layout_marginTop="10dp"
+        android:text="Información enviada: "
+        android:textColor="#000000"
+        android:textSize="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_infoEnviada"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linear_layout_nombreyapellido">
+    <TextView
+        android:id="@+id/text_view_set_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[nombre]"
+        android:layout_marginVertical="5dp"/>
+    <TextView
+        android:id="@+id/text_view_set_apellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[apellido]"
+        android:layout_marginVertical="5dp"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_below="@id/linear_layout_nombreyapellido"
+    android:id="@+id/linear_layout_edad"
+    android:layout_marginVertical="5dp"
+    >
+    <TextView
+        android:id="@+id/text_view_set_edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="[edad recibida]"
+        android:layout_marginVertical="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" años."
+        android:layout_marginVertical="5dp"/>
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout_edad"
+        android:layout_centerHorizontal="true"
+        android:text="[e-mail]"
+        android:id="@+id/text_view_set_email"
+        android:layout_marginVertical="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_set_email"
+        android:text="[carrera]"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/text_view_set_carrera"
+        android:layout_marginVertical="5dp"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desea recibir informacion sobre: "
+        android:layout_below="@id/text_view_set_carrera"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/text_view_desearecibirinfo"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="[opciones elegidas]"
+    android:layout_below="@id/text_view_desearecibirinfo"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/text_view_checkboxElegidos"
+
+    />
+</RelativeLayout>

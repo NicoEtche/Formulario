@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9c1c1"
+    tools:context=".FormularioActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp">
+
+        <TextView
+            android:id="@+id/text_view_completarFormulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Completar el formulario"
+            android:textSize="25dp"
+            android:layout_marginVertical="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_completarFormulario"
+            android:text="Nombre: "
+            android:textSize="20dp"
+            android:layout_marginVertical="20dp"/>
+
+        <TextView
+            android:id="@+id/text_view_apellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_nombre"
+            android:layout_marginVertical="20dp"
+            android:text="Apellido: "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/text_view_edad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_apellido"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Edad: "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/text_view_carrera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_edad"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Carrera: "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/text_view_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_carrera"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Email: "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/text_view_textoPreCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_email"
+            android:text="Deseo recibir mail informándome sobre los siguientes eventos: " />
+
+        <EditText
+            android:id="@+id/edit_text_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/text_view_nombre"
+            android:layout_toRightOf="@id/text_view_nombre" />
+
+        <EditText
+            android:id="@+id/edit_text_apellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/text_view_apellido"
+            android:layout_toRightOf="@id/text_view_apellido" />
+
+        <EditText
+            android:id="@+id/edit_text_edad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/text_view_edad"
+            android:layout_toRightOf="@id/text_view_edad" />
+
+        <EditText
+            android:id="@+id/edit_text_carrera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/text_view_carrera"
+            android:layout_toRightOf="@id/text_view_carrera" />
+
+        <EditText
+            android:id="@+id/edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/text_view_email"
+            android:layout_toRightOf="@id/text_view_email" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_textoPreCheckbox"
+            android:layout_toLeftOf="@id/checkbox_meetups"
+            android:text="Torneos"
+            android:id="@+id/checkbox_torneos"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_meetups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_textoPreCheckbox"
+            android:layout_centerHorizontal="true"
+            android:text="Meetups" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_textoPreCheckbox"
+            android:layout_toRightOf="@id/checkbox_meetups"
+            android:text="Asados"
+            android:id="@+id/checkbox_asados"/>
+
+        <Button
+            android:id="@+id/button_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkbox_meetups"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="enviar" />
+
+    </RelativeLayout>
+</RelativeLayout>
